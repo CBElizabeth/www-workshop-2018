@@ -75,7 +75,7 @@ p {
 
 section > h2 { /* section header text */
     font-size: 2em; /* section header font size */
-    line-height: 2em; 
+    line-height: 1.6em; 
     font-family: 'Pacifico', serif; /* section header font family */
 }
 
@@ -148,9 +148,27 @@ section.page.text {
     padding-right: 30vw;
 }
 
+section.page > .image-box {
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+section.page > .image-box > img {
+    object-fit: cover;
+    height: 30vh;
+    width: auto;
+    margin: 2px;
+}
+
 @media screen and (max-width: 700px) {
     section.page.text {
-        padding-right: 1em;
+        padding-right: 1vmin;
+        font-size: 0.8em;
+    }
+    section.page > .image-box > img {
+        height: 20vh;
     }
 }
 
@@ -204,8 +222,8 @@ section.page.text {
 
 @media screen and (max-width: 700px) {
     .image-scaled {
-        max-height: 15vmin;
-        max-width: 15vmin;
+        max-height: 30vmin;
+        max-width: 30vmin;
     }
 }
 
