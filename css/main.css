@@ -294,14 +294,15 @@ section.page > .image-box > img {
     background-position: 50% 25%;
     background-repeat: no-repeat;
     z-index: -2;
+    min-height: 100vh;
 }
 @media all and (orientation: portrait) {
     .image-background {
-        -moz-background-size: auto cover;
-        -o-background-size: auto cover;
-        -webkit-background-size: auto cover;
+        -moz-background-size: cover auto;
+        -o-background-size: cover auto;
+        -webkit-background-size: cover auto;
         background-position: 50% 0%;
-        background-size: auto cover;
+        background-size: cover;
     }
 }
 @media all and (orientation: landscape) {
@@ -310,7 +311,7 @@ section.page > .image-box > img {
         -o-background-size: cover auto;
         -webkit-background-size: cover auto;
         background-position: 50% 25%;
-        background-size: cover auto;
+        background-size: cover;
     }
 }
 
